@@ -12,8 +12,13 @@ if [ ! "$current_version" == "$new_version" ]; then
   cp -a "$SNAP"/Defold "$SNAP_USER_DATA"
   mkdir -p "$SNAP_USER_DATA"/.java
   # Modify path to keep files in writable area
-  sed -i "s|linux = |linux = -Duser.home=$SNAP_USER_DATA|" "$SNAP_USER_DATA"/config
-  sed -i "s|resourcespath = |resourcespath = /snap/defold/current|" "$SNAP_USER_DATA"/config
+  # Strip numeric (x1, 3 etc) from the end of these variables
+  # so we can append the 'current' text literal so we don't end up with
+  # config files with numbered paths hard-wired in them
+  CURRENT_USER_DATA=$(dirname $SNAP_USER_DATA)
+  CURRENT_SNAP=$(dirname $SNAP)
+  sed -i "s|linux = |linux = -Duser.home=$CURRENT_USER_DATA/current|" "$SNAP_USER_DATA"/config
+  sed -i "s|resourcespath = |resourcespath = $CURRENT_SNAP/current|" "$SNAP_USER_DATA"/config
 fi
 
 "$SNAP_USER_DATA"/Defold "$@"
