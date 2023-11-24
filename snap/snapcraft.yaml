@@ -1,0 +1,37 @@
+name: defold
+base: core22
+adopt-info: defold
+summary: Defold
+description: |
+  Defold is a completely free to use game engine for development of console,
+  desktop, mobile and web games. There's nothing to set up or configure,
+  not even when building. Simply download the editor and get creative!
+
+grade: stable
+confinement: strict
+
+parts:
+  launcher:
+    plugin: dump
+    source: snap/local
+  defold:
+    source: https://d.defold.com/editor2/channels/editor-alpha/Defold-x86_64-linux.tar.gz
+    plugin: dump
+    override-pull: |
+      craftctl default
+      craftctl set version="$(grep ^version ./config | awk -F ' ' '{print $3}')"
+    stage-packages:
+      - libopenal1
+
+apps:
+  defold:
+    command: bin/launch
+    extensions: [ gnome ]
+    plugs:
+      - home
+      - network
+      - network-bind
+      - joystick
+      - removable-media
+      - audio-playback
+

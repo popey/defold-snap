@@ -1,0 +1,19 @@
+#!/bin/bash -x 
+
+# If no configuration file exists or there's a newer one, we copy it (and the launcher) 
+# into writable space, and tweak it
+# config file already exists, but is there a newer one?
+current_version=$(grep ^version "$SNAP_USER_DATA"/config)
+new_version=$(grep ^version "$SNAP"/config)
+if [ ! "$current_version" == "$new_version" ]; then
+  # we have a new version
+  # Copy config from read-only to writable area
+  cp -a "$SNAP"/config "$SNAP_USER_DATA"
+  cp -a "$SNAP"/Defold "$SNAP_USER_DATA"
+  mkdir -p "$SNAP_USER_DATA"/.java
+  # Modify path to keep files in writable area
+  sed -i "s|linux = |linux = -Duser.home=$SNAP_USER_DATA|" "$SNAP_USER_DATA"/config
+  sed -i "s|resourcespath = |resourcespath = /snap/defold/current|" "$SNAP_USER_DATA"/config
+fi
+
+"$SNAP_USER_DATA"/Defold "$@"
