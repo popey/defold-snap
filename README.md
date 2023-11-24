@@ -4,6 +4,8 @@
 [![Defold](https://snapcraft.io/defold/badge.svg)](https://snapcraft.io/defold)
 [![Defold](https://snapcraft.io/defold/trending.svg?name=0)](https://snapcraft.io/defold)
 
+## Defold
+
 Defold comes fully featured out of the box. There's nothing to set up or configure, not even when building. Simply download the editor and get creative!
 
 **No setup**
