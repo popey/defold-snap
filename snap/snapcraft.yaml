@@ -18,7 +18,7 @@ parts:
     plugin: dump
     source: snap/local
   defold:
-    source: https://d.defold.com/editor2/channels/editor-alpha/Defold-x86_64-linux.tar.gz
+    source: https://github.com/defold/defold/releases/latest/download/Defold-x86_64-linux.tar.gz
     plugin: dump
     override-pull: |
       craftctl default
