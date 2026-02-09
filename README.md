@@ -14,6 +14,8 @@
 
 Defold comes fully featured out of the box. There's nothing to set up or configure, not even when building. Simply download the editor and get creative!
 
+**What is Defold?** [Watch on YouTube](https://www.youtube.com/watch?v=aYGxAoT9dX8)
+
 **No setup**
 
     ✓ Visual Editor          ✓ Scene Editor
