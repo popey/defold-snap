@@ -6,6 +6,10 @@
 
 [![Get it from the Snap Store](https://snapcraft.io/en/dark/install.svg)](https://snapcraft.io/defold)
 
+## Install
+
+    snap install defold
+
 ## Defold
 
 Defold comes fully featured out of the box. There's nothing to set up or configure, not even when building. Simply download the editor and get creative!
