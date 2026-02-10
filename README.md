@@ -29,20 +29,20 @@ Defold comes fully featured out of the box. There's nothing to set up or configu
     ✓ Nintendo Switch        ✓ Steam
     ✓ Android                ✓ HTML5
     ✓ iOS                    ✓ Facebook
-    ✓ macOS                  ✓ Q3 2023 PlayStation®5
-    ✓ Linux                  ✓ Q2 2024 XBox
+    ✓ macOS                  ✓ PlayStation®5
+    ✓ Linux                  ✓ Xbox
 
 **Turn-key solution**
 
     ✓ Use basic building blocks to create complex behaviour.
-    ✓ Everything you need to make a game in one tool
+    ✓ Everything you need to make a game in one tool.
     ✓ Write game logic using Lua.
-    ✓ Zero-config cloud build for native code
+    ✓ Zero-config cloud build for native code.
 
 **Custom configuration**
 
     ✓ Add new functionality from the Asset Portal.
-    ✓ Setup your own local build environment.
+    ✓ Set up your own local build environment.
     ✓ Write your own native code to extend the engine.
     ✓ Integrated with tools such as Atom, VS Code, Spine and Tiled.
 
@@ -52,14 +52,14 @@ Defold comes fully featured out of the box. There's nothing to set up or configu
     ✓ No licensing cost.
     ✓ No royalties.
     ✓ No runtime fee.
-    ✓ Free forever. Thanks to the objectives of the Defold Foundation 
+    ✓ Free forever. Thanks to the objectives of the Defold Foundation.
 
 **Production ready**
 
-    ✓ Proven track record of game releases on mobile, web, desktop and consoles. 
+    ✓ Proven track record of game releases on mobile, web, desktop and consoles.
     ✓ Integrations with analytics, app economy and game services available out of the box.
     ✓ Actively developed, with a new release every month.
-    ✓ Technical support contracts available if needed. 
+    ✓ Technical support contracts available if needed.
 
 * Defold foundation: https://defold.com/foundation
 * Showcase: https://defold.com/showcase
